@@ -1,4 +1,4 @@
-﻿namespace CSharpFundamentals
+﻿namespace CSLib
 {
     public class Person
     {

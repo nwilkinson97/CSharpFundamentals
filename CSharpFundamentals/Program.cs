@@ -1,4 +1,6 @@
-﻿namespace CSharpFundamentals
+﻿using CSLib;
+
+namespace CSharpFundamentals
 {
     class Program
     {
