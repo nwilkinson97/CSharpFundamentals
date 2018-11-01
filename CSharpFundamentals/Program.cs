@@ -9,6 +9,7 @@ namespace CSharpFundamentals
             IntroductionToClasses();
         }
 
+        #region Section 1 -- Introduction to Classes
         private static void IntroductionToClasses()
         {
             //  New instance of the person class for Thing 1
@@ -25,5 +26,6 @@ namespace CSharpFundamentals
             //  Introduce King Thing to Super Thing
             person2.Introduce("Super Thing");
         }
+        #endregion
     }
 }
