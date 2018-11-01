@@ -9,7 +9,7 @@
             System.Console.WriteLine("Hello {0}, I am {1}!", to, Name);
         }
 
-        public Person Parse(string str)
+        public static Person Parse(string str)
         {
             var person = new Person();
             person.Name = str;
@@ -26,7 +26,10 @@
                 Name = "Thing 1"
             };
 
-            person.Introduce("Thing 2");            
+            person.Introduce("Thing 2");
+
+            var person2 = Person.Parse("King Thing");
+            person2.Introduce("Super Thing");
         }
     }
 }
