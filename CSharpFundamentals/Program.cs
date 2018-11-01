@@ -44,6 +44,11 @@
     {
         static void Main(string[] args)
         {
+            IntroductionToClasses();
+        }
+
+        private static void IntroductionToClasses()
+        {
             //  New instance of the person class for Thing 1
             var person = new Person
             {
