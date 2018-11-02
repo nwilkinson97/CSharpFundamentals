@@ -16,7 +16,7 @@ namespace CSharpFundamentals
             System.Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
 
             //  Move the cursor to a new location
-            point.Move(17, 32);
+            point.Move(null);
             System.Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
 
             //  Move the cursor to a new lcoation
