@@ -14,7 +14,22 @@ namespace CSharpFundamentals
             MethodsInClasses();
             UsingParamsModifier();
 
-            var number = int.Parse("abc");
+            //var number = int.Parse("abc");
+
+            var result = int.TryParse("abc", out int n1);
+
+            if(result)
+                Console.WriteLine("Conversion Success -- {0}", n1);
+            else
+                Console.WriteLine("Conversion Failure");
+
+            result = int.TryParse("123", out int n2);
+
+            if (result)
+                Console.WriteLine("Conversion Success -- {0}", n2);
+            else
+                Console.WriteLine("Conversion Failure");
+
         }
 
 
