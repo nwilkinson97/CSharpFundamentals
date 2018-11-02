@@ -13,6 +13,8 @@ namespace CSharpFundamentals
             ClassConstructorsPartII();
             MethodsInClasses();
             UsingParamsModifier();
+
+            var number = int.Parse("abc");
         }
 
 
