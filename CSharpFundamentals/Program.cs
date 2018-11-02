@@ -8,6 +8,9 @@ namespace CSharpFundamentals
         {
             IntroductionToClasses();
             ClassConstructors();
+
+            var customer = new Customer(1, "Ben");
+            customer.Orders.Add(new Orders());
         }
 
 
