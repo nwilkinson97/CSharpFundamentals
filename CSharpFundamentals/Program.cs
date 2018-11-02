@@ -7,11 +7,11 @@ namespace CSharpFundamentals
         static void Main(string[] args)
         {
             IntroductionToClasses();
-            ClassConstructors();
-
-            var customer = new Customer(1, "Ben");
-            customer.Orders.Add(new Orders());
+            ClassConstructorPartI();
+            ClassConstructorsPartII();
         }
+
+
 
 
 
@@ -33,7 +33,7 @@ namespace CSharpFundamentals
             person2.Introduce("Super Thing");
         }
 
-        private static void ClassConstructors()
+        private static void ClassConstructorPartI()
         {
             var customer = new Customer(1) { Name = "Thing One" };
             System.Console.WriteLine("Searching for customer id:  {0} with the name of {1}", customer.Id, customer.Name);
@@ -52,6 +52,12 @@ namespace CSharpFundamentals
                 Name = "Chocolate Thunda"
             };
             System.Console.WriteLine("Searching for customer id:  {0} with the name of {1}", customer4.Id, customer4.Name);
+        }
+
+        private static void ClassConstructorsPartII()
+        {
+            var customer = new Customer(1, "Ben");
+            customer.Orders.Add(new Orders());
         }
         #endregion
     }
