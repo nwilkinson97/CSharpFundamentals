@@ -39,8 +39,9 @@
         /// <param name="newLocation"></param>
         public void Move(Point newLocation)
         {
-            this.X = newLocation.X;
-            this.Y = newLocation.Y;
+            // Call the existing move method and provide information.
+            // Prevent duplication of codehere.
+            Move(newLocation.X, newLocation.Y);
         }
 
     }
