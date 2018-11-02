@@ -11,28 +11,8 @@ namespace CSharpFundamentals
             IntroductionToClasses();
             ClassConstructorPartI();
             ClassConstructorsPartII();
-
-            try
-            {
-                //  Set the initial location
-                var point = new Point(15, 30);
-                // Display Initial Location
-                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
-
-                //  Move the cursor to a new location
-                point.Move(null);
-                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
-
-                //  Move the cursor to a new lcoation
-                point.Move(new Point(19, 31));
-                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-            }
+            MethodsInClasses();
         }
-
 
         #region Section 1 -- Introduction to Classes
         private static void IntroductionToClasses()
@@ -85,6 +65,29 @@ namespace CSharpFundamentals
             //             where the work is required.
             var customer = new Customer(1, "Ben");
             customer.Orders.Add(new Orders());
+        }
+
+        private static void MethodsInClasses()
+        {
+            try
+            {
+                //  Set the initial location
+                var point = new Point(15, 30);
+                // Display Initial Location
+                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+
+                //  Move the cursor to a new location
+                point.Move(null);
+                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+
+                //  Move the cursor to a new lcoation
+                point.Move(new Point(19, 31));
+                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
         #endregion
     }
