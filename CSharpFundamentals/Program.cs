@@ -1,4 +1,6 @@
 ﻿using CSLib;
+using System;
+using System.Diagnostics;
 
 namespace CSharpFundamentals
 {
@@ -10,18 +12,25 @@ namespace CSharpFundamentals
             ClassConstructorPartI();
             ClassConstructorsPartII();
 
-            //  Set the initial location
-            var point = new Point(15, 30);
-            // Display Initial Location
-            System.Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+            try
+            {
+                //  Set the initial location
+                var point = new Point(15, 30);
+                // Display Initial Location
+                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
 
-            //  Move the cursor to a new location
-            point.Move(null);
-            System.Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+                //  Move the cursor to a new location
+                point.Move(null);
+                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
 
-            //  Move the cursor to a new lcoation
-            point.Move(new Point(19, 31));
-            System.Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+                //  Move the cursor to a new lcoation
+                point.Move(new Point(19, 31));
+                Console.WriteLine("You are now located at ({0}:{1})", point.X, point.Y);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
 
 
