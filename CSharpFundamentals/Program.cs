@@ -17,19 +17,19 @@ namespace CSharpFundamentals
             //var number = int.Parse("abc");
 
             var result = int.TryParse("abc", out int n1);
-
-            if(result)
-                Console.WriteLine("Conversion Success -- {0}", n1);
-            else
-                Console.WriteLine("Conversion Failure");
+            DisplayConversionMessage(result, n1);
 
             result = int.TryParse("123", out int n2);
+            DisplayConversionMessage(result, n2);
 
+        }
+
+        private static void DisplayConversionMessage(bool result, int number)
+        {
             if (result)
-                Console.WriteLine("Conversion Success -- {0}", n2);
+                Console.WriteLine("Conversion Success -- {0}", number);
             else
                 Console.WriteLine("Conversion Failure");
-
         }
 
 
