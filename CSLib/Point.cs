@@ -1,4 +1,6 @@
-﻿namespace CSLib
+﻿using System;
+
+namespace CSLib
 {
     public class Point
     {
@@ -39,6 +41,9 @@
         /// <param name="newLocation"></param>
         public void Move(Point newLocation)
         {
+            if (newLocation == null)
+                throw new ArgumentNullException("neweLocation");
+
             // Call the existing move method and provide information.
             // Prevent duplication of codehere.
             Move(newLocation.X, newLocation.Y);
