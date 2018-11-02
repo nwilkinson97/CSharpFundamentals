@@ -10,7 +10,7 @@ namespace CSLib
 
         public Customer()
         {
-            //Orders = new List<Orders>();
+            Orders = new List<Orders>();
         }
 
         public Customer(int id)
