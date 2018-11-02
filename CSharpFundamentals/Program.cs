@@ -7,7 +7,11 @@ namespace CSharpFundamentals
         static void Main(string[] args)
         {
             IntroductionToClasses();
+            ClassConstructors();
+        }
 
+        private static void ClassConstructors()
+        {
             var customer = new Customer(1) { Name = "Thing One" };
             System.Console.WriteLine("Searching for customer id:  {0} with the name of {1}", customer.Id, customer.Name);
 
