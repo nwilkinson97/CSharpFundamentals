@@ -12,23 +12,10 @@ namespace CSharpFundamentals
             ClassConstructorPartI();
             ClassConstructorsPartII();
             MethodsInClasses();
-
-            // Create a new instance of the Calculator Class
-            var calculator = new Calculator();
-
-            //  Add by pasing a new integer array
-            Console.WriteLine(new int[] { 1, 2 });
-            Console.WriteLine(new int[] { 1, 2, 3 });
-            Console.WriteLine(new int[] { 1, 2, 3, 4});
-            Console.WriteLine(new int[] { 1, 2, 3, 4, 5 });
-
-            // or alternatively you could just pass the values as parameters
-            Console.WriteLine(calculator.Add(1, 2));
-            Console.WriteLine(calculator.Add(1, 2));
-            Console.WriteLine(calculator.Add(1, 2, 3));
-            Console.WriteLine(calculator.Add(1, 2, 3, 4));
-            Console.WriteLine(calculator.Add(1, 2, 3, 4, 5));
+            UsingParamsModifier();
         }
+
+
 
         #region Section 1 -- Introduction to Classes
         private static void IntroductionToClasses()
@@ -104,6 +91,25 @@ namespace CSharpFundamentals
             {
                 Debug.WriteLine(ex.Message);
             }
+        }
+
+        private static void UsingParamsModifier()
+        {
+            // Create a new instance of the Calculator Class
+            var calculator = new Calculator();
+
+            //  Add by pasing a new integer array
+            Console.WriteLine(new int[] { 1, 2 });
+            Console.WriteLine(new int[] { 1, 2, 3 });
+            Console.WriteLine(new int[] { 1, 2, 3, 4 });
+            Console.WriteLine(new int[] { 1, 2, 3, 4, 5 });
+
+            // or alternatively you could just pass the values as parameters
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(1, 2, 3));
+            Console.WriteLine(calculator.Add(1, 2, 3, 4));
+            Console.WriteLine(calculator.Add(1, 2, 3, 4, 5));
         }
         #endregion
     }
