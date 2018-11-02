@@ -7,6 +7,10 @@ namespace CSharpFundamentals
         static void Main(string[] args)
         {
             IntroductionToClasses();
+
+            var customer = new Customer(1, "Thing One");
+            System.Console.WriteLine(customer.Id);
+            System.Console.WriteLine(customer.Name);
         }
 
         #region Section 1 -- Introduction to Classes
@@ -15,10 +19,10 @@ namespace CSharpFundamentals
             //  New instance of the person class for Thing 1
             var person = new Person
             {
-                Name = "Thing 1"
+                Name = "Thing One"
             };
             //  Introduce Thing 1 to Thing 2
-            person.Introduce("Thing 2");
+            person.Introduce("Thing Two");
 
             // Use Static Parse Method to create a new instance of
             // the person class.
