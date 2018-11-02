@@ -8,9 +8,7 @@ namespace CSharpFundamentals
         {
             IntroductionToClasses();
 
-            var customer = new Customer(1, "Thing One");
-            System.Console.WriteLine(customer.Id);
-            System.Console.WriteLine(customer.Name);
+
         }
 
         #region Section 1 -- Introduction to Classes
