@@ -9,10 +9,9 @@ namespace CSharpFundamentals
             IntroductionToClasses();
             ClassConstructorPartI();
             ClassConstructorsPartII();
+
+            
         }
-
-
-
 
 
         #region Section 1 -- Introduction to Classes
@@ -60,6 +59,10 @@ namespace CSharpFundamentals
 
         private static void ClassConstructorsPartII()
         {
+            //  This section here is used to show two things.
+            //  When the class dos not initizliae the List of Orders object an error is generated.
+            //     Note:  Do not try and fix by initializing the List here.  This should be done
+            //             where the work is required.
             var customer = new Customer(1, "Ben");
             customer.Orders.Add(new Orders());
         }
