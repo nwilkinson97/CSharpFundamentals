@@ -13,8 +13,10 @@ namespace CSharpFundamentals
 
             var customer2 = new Customer(2);
             customer2.Name = "Thing King";
-            System.Console.WriteLine("Searching for customer id:  {0} with the name of {1}", customer.Id, customer.Name);
+            System.Console.WriteLine("Searching for customer id:  {0} with the name of {1}", customer2.Id, customer2.Name);
 
+            var customer3 = new Customer(3, "Thing Super");
+            System.Console.WriteLine("Searching for customer id:  {0} with the name of {1}", customer3.Id, customer3.Name);
         }
 
         #region Section 1 -- Introduction to Classes
