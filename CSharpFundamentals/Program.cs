@@ -13,24 +13,10 @@ namespace CSharpFundamentals
             ClassConstructorsPartII();
             MethodsInClasses();
             UsingParamsModifier();
-
-            //var number = int.Parse("abc");
-
-            var result = int.TryParse("abc", out int n1);
-            DisplayConversionMessage(result, n1);
-
-            result = int.TryParse("123", out int n2);
-            DisplayConversionMessage(result, n2);
-
+            IntTryParseMethod_OutParam();
         }
 
-        private static void DisplayConversionMessage(bool result, int number)
-        {
-            if (result)
-                Console.WriteLine("Conversion Success -- {0}", number);
-            else
-                Console.WriteLine("Conversion Failure");
-        }
+
 
 
 
@@ -128,6 +114,26 @@ namespace CSharpFundamentals
             Console.WriteLine(calculator.Add(1, 2, 3, 4));
             Console.WriteLine(calculator.Add(1, 2, 3, 4, 5));
         }
+
+        private static void IntTryParseMethod_OutParam()
+        {
+            //var number = int.Parse("abc");
+
+            var result = int.TryParse("abc", out int n1);
+            DisplayConversionMessage(result, n1);
+
+            result = int.TryParse("123", out int n2);
+            DisplayConversionMessage(result, n2);
+        }
+
+        private static void DisplayConversionMessage(bool result, int number)
+        {
+            if (result)
+                Console.WriteLine("Conversion Success -- {0}", number);
+            else
+                Console.WriteLine("Conversion Failure");
+        }
+
         #endregion
     }
 }
