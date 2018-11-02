@@ -1,9 +1,12 @@
-﻿namespace CSLib
+﻿using System.Collections.Generic;
+
+namespace CSLib
 {
     public class Customer
     {
         public int Id;
         public string Name;
+        public List<Orders> Orders;
 
         public Customer()
         {
