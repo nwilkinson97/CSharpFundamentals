@@ -13,14 +13,13 @@ namespace CSLib
             Orders = new List<Orders>();
         }
 
-        public Customer(int id)
+        public Customer(int id): this()
         {
             this.Id = id;
         }
 
-        public Customer(int id, string name)
+        public Customer(int id, string name) : this(id)
         {
-            this.Id = id;
             this.Name = name;
         }
     }
