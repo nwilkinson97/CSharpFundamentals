@@ -15,14 +15,10 @@ namespace CSharpFundamentals
             UsingParamsModifier();
             IntTryParseMethod_OutParam();
 
-            var customer = new Customer(1);
-            customer.Order.Add(new Orders());
-            customer.Order.Add(new Orders());
-
-            customer.Promote();
-
-            Console.WriteLine(customer.Order.Count);
+            FieldsWithReadonlyModifier();
         }
+
+
 
 
 
@@ -127,19 +123,38 @@ namespace CSharpFundamentals
         {
             //var number = int.Parse("abc");
 
+            //  Try Parse Result is False
             var result = int.TryParse("abc", out int n1);
             DisplayConversionMessage(result, n1);
 
+            //  Try Parse Result is True
             result = int.TryParse("123", out int n2);
             DisplayConversionMessage(result, n2);
         }
 
         private static void DisplayConversionMessage(bool result, int number)
         {
+            //  If result is True) 
             if (result)
                 Console.WriteLine("Conversion Success -- {0}", number);
-            else
+            else //  Else result is False
                 Console.WriteLine("Conversion Failure");
+        }
+
+        private static void FieldsWithReadonlyModifier()
+        {
+            // Create new instance of the customer class
+            var customer = new Customer(1);
+
+            //  Add 2 Orders to the Customer 1
+            customer.Order.Add(new Orders());
+            customer.Order.Add(new Orders());
+
+            // Promote the Customer
+            customer.Promote();
+
+            // Output the Count of Orders
+            Console.WriteLine(customer.Order.Count);
         }
 
         #endregion
