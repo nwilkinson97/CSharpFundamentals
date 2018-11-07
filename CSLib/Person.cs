@@ -11,8 +11,21 @@ namespace CSLib
         /// </summary>
         public string Name;
 
+        /// <summary>
+        /// THe User Name for Login Purposes
+        /// </summary>
+        public string UserName { get; set; }
+        
+        /// <summary>
+        /// Birth Date that can only be set within the class constructor
+        /// </summary>
         public DateTime BirthDate { get; private set; }
 
+        /// <summary>
+        /// Class Constructor that expects an argument to be passsed for the 
+        /// BirthDate (Auto-Implemented) Property
+        /// </summary>
+        /// <param name="birthDate"></param>
         public Person(DateTime birthDate)
         {
             BirthDate = birthDate;
