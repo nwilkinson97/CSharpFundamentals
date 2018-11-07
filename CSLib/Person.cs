@@ -1,4 +1,6 @@
-﻿namespace CSLib
+﻿using System;
+
+namespace CSLib
 {
     public class Person
     {
@@ -19,6 +21,16 @@
         {
             // Introductions are in order
             System.Console.WriteLine("Hello {0}, I am {1}!", to, Name);
+        }
+
+        public void SetBirthDate(DateTime birthDate)
+        {
+            _birthDate = birthDate;
+        }
+
+        public DateTime GetBirthDate()
+        {
+            return _birthDate;
         }
 
         /// <summary>

@@ -17,6 +17,8 @@ namespace CSharpFundamentals
             FieldsWithReadonlyModifier();
 
             var person = new Person();
+            person.SetBirthDate(new DateTime(1997, 04, 18));
+            Console.WriteLine(person.GetBirthDate());
         }
                               
 
