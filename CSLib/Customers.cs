@@ -15,7 +15,7 @@ namespace CSLib
         /// <summary>
         /// Used to track a list of orders the customer is going to make
         /// </summary>
-        public List<Orders> Order;
+        public readonly List<Orders> Order;
 
 
         /// <summary>

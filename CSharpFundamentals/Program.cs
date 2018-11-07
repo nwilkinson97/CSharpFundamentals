@@ -78,7 +78,7 @@ namespace CSharpFundamentals
             //     Note:  Do not try and fix by initializing the List here.  This should be done
             //             where the work is required.
             var customer = new Customer(1, "Ben");
-            customer.Orders.Add(new Orders());
+            customer.Order.Add(new Orders());
         }
 
         private static void MethodsInClasses()
