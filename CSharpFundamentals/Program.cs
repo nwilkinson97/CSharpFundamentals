@@ -16,10 +16,12 @@ namespace CSharpFundamentals
             IntTryParseMethod_OutParam();
 
             var customer = new Customer(1);
-            customer.Orders.Add(new Orders());
-            customer.Orders.Add(new Orders());
+            customer.Order.Add(new Orders());
+            customer.Order.Add(new Orders());
 
-            Console.WriteLine(customer.Orders.Count);
+            customer.Promote();
+
+            Console.WriteLine(customer.Order.Count);
         }
 
 

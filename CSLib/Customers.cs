@@ -15,7 +15,7 @@ namespace CSLib
         /// <summary>
         /// Used to track a list of orders the customer is going to make
         /// </summary>
-        public List<Orders> Orders;
+        public List<Orders> Order;
 
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace CSLib
         /// </summary>
         public Customer()
         {
-            Orders = new List<Orders>();
+            Order = new List<Orders>();
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace CSLib
         /// </summary>
         public void Promote()
         {
-            Orders = new List<Orders>();
+            Order = new List<Orders>();
         }
     }
 }
