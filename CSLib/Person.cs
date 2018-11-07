@@ -9,6 +9,8 @@
         /// </summary>
         public string Name;
 
+        private DateTime _birthDate;
+
         /// <summary>
         /// This is a Method used to intruduce to people.
         /// </summary>
