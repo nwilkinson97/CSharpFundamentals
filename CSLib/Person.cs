@@ -11,7 +11,12 @@ namespace CSLib
         /// </summary>
         public string Name;
 
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; private set; }
+
+        public Person(DateTime birthDate)
+        {
+            BirthDate = birthDate;
+        }
 
         /// <summary>
         /// This is a Method used to intruduce to people.
@@ -35,7 +40,7 @@ namespace CSLib
         public static Person Parse(string str)
         {
             //  Lets instantiate a new object of the type Person
-            var person = new Person
+            var person = new Person(new DateTime(1997, 04, 18))
             {
                 Name = str
             };

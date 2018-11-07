@@ -24,7 +24,7 @@ namespace CSharpFundamentals
         private static void IntroductionToClasses()
         {
             //  New instance of the person class for Thing 1
-            var person = new Person
+            var person = new Person(new DateTime(1997, 04, 18))
             {
                 Name = "Thing One"
             };
@@ -160,9 +160,8 @@ namespace CSharpFundamentals
         private static void FieldsEncapsulatedWithPublicGetterAndSetterMethods()
         {
             // Create an instance of person
-            var person = new Person();
-            // Set the persons birthdate
-            person.BirthDate = new DateTime(1997, 04, 18);
+            var person = new Person(new DateTime(1997, 04, 18));
+
             // Get the persons birthdate
             Console.WriteLine(person.BirthDate);
 
