@@ -14,6 +14,12 @@ namespace CSharpFundamentals
             MethodsInClasses();
             UsingParamsModifier();
             IntTryParseMethod_OutParam();
+
+            var customer = new Customer(1);
+            customer.Orders.Add(new Orders());
+            customer.Orders.Add(new Orders());
+
+            Console.WriteLine(customer.Orders.Count);
         }
 
 

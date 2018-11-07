@@ -48,5 +48,13 @@ namespace CSLib
         {
             this.Name = name;
         }
+
+        /// <summary>
+        /// Promote User Business Logic
+        /// </summary>
+        public void Promote()
+        {
+            Orders = new List<Orders>();
+        }
     }
 }
