@@ -11,7 +11,7 @@ namespace CSLib
         /// </summary>
         public string Name;
 
-        
+        public DateTime BirthDate { get; set; }
 
         /// <summary>
         /// This is a Method used to intruduce to people.
