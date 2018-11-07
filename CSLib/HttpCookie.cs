@@ -4,7 +4,7 @@ namespace CSLib
 {
     class HttpCookie
     {
-        private Dictionary<string, string> _dictionary = new Dictionary<string, string>();
+        private Dictionary<string, string> _dictionary;
 
         public HttpCookie()
         {
