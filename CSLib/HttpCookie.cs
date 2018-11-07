@@ -1,0 +1,6 @@
+﻿namespace CSLib
+{
+    class HttpCookie
+    {
+    }
+}
