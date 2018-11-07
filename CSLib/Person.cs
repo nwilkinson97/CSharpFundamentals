@@ -11,7 +11,7 @@ namespace CSLib
         /// </summary>
         public string Name;
 
-        private DateTime _birthDate;
+        
 
         /// <summary>
         /// This is a Method used to intruduce to people.
@@ -21,16 +21,6 @@ namespace CSLib
         {
             // Introductions are in order
             System.Console.WriteLine("Hello {0}, I am {1}!", to, Name);
-        }
-
-        public void SetBirthDate(DateTime birthDate)
-        {
-            _birthDate = birthDate;
-        }
-
-        public DateTime GetBirthDate()
-        {
-            return _birthDate;
         }
 
         /// <summary>
