@@ -162,9 +162,9 @@ namespace CSharpFundamentals
             // Create an instance of person
             var person = new Person();
             // Set the persons birthdate
-            person.SetBirthDate(new DateTime(1997, 04, 18));
+            person.BirthDate = new DateTime(1997, 04, 18);
             // Get the persons birthdate
-            Console.WriteLine(person.GetBirthDate());
+            Console.WriteLine(person.BirthDate);
         }
 
 
