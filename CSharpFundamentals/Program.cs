@@ -15,12 +15,10 @@ namespace CSharpFundamentals
             UsingParamsModifier();
             IntTryParseMethod_OutParam();
             FieldsWithReadonlyModifier();
-
-            var person = new Person();
-            person.SetBirthDate(new DateTime(1997, 04, 18));
-            Console.WriteLine(person.GetBirthDate());
+            FieldsEncapsulatedWithPublicGetterAndSetterMethods();
         }
-                              
+
+
 
         #region Section 1 -- Introduction to Classes
         private static void IntroductionToClasses()
@@ -154,6 +152,21 @@ namespace CSharpFundamentals
             // Output the Count of Orders
             Console.WriteLine(customer.Order.Count);
         }
+
+        /// <summary>
+        /// In the future it can be better to use properties.  I will show you this in the 
+        /// next section as we progress.
+        /// </summary>
+        private static void FieldsEncapsulatedWithPublicGetterAndSetterMethods()
+        {
+            // Create an instance of person
+            var person = new Person();
+            // Set the persons birthdate
+            person.SetBirthDate(new DateTime(1997, 04, 18));
+            // Get the persons birthdate
+            Console.WriteLine(person.GetBirthDate());
+        }
+
 
         #endregion
     }
