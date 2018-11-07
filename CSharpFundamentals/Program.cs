@@ -165,6 +165,8 @@ namespace CSharpFundamentals
             person.BirthDate = new DateTime(1997, 04, 18);
             // Get the persons birthdate
             Console.WriteLine(person.BirthDate);
+
+            Console.WriteLine(person.Age);
         }
 
 

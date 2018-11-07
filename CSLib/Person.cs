@@ -43,5 +43,22 @@ namespace CSLib
             // Return the person object
             return person;
         }
+
+        /// <summary>
+        /// Get the age of the person using business logic and the BirthDate
+        /// </summary>
+        public int Age
+        {
+            get
+            {
+                //  Subtract Todays Date (Present) - BirthDate (Past)
+                var timeSpan = DateTime.Today - BirthDate;
+                //  Divide the timeSpan by 365 days (year)
+                var years = timeSpan.Days / 365;
+
+                //  return years
+                return years;
+            }
+        }
     }
 }
