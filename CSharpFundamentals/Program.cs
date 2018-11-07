@@ -14,15 +14,11 @@ namespace CSharpFundamentals
             MethodsInClasses();
             UsingParamsModifier();
             IntTryParseMethod_OutParam();
-
             FieldsWithReadonlyModifier();
+
+
         }
-
-
-
-
-
-
+                              
 
         #region Section 1 -- Introduction to Classes
         private static void IntroductionToClasses()
