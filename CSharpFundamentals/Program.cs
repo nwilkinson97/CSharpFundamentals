@@ -19,6 +19,20 @@ namespace CSharpFundamentals
 
             UsingDictionaryClass();
 
+            UsingInheritance();
+
+        }
+
+        private static void UsingInheritance()
+        {
+            var text = new Text
+            {
+                Width = 100
+                ,
+                Height = 100
+            };
+
+            text.Copy();
         }
 
 
