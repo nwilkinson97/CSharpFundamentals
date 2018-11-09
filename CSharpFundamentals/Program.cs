@@ -29,7 +29,7 @@ namespace CSharpFundamentals
             // -- to changes in the business logic for this function.
             // -- it is a best practice here that the CalculateRating method
             // -- is not accessible.
-            customer.CalculateRating();
+            
 
 
         }

@@ -54,7 +54,18 @@ namespace CSLib
         /// </summary>
         public void Promote()
         {
-            // TODO - Add Code Here
+            var rating = CalculateRating();
+
+            if(rating == 0)
+                System.Console.WriteLine("Promoted to Level 1");
+            else
+                System.Console.WriteLine("Promoted to Level 2");
+
+        }
+
+        private int CalculateRating()
+        {
+            return 0;
         }
     }
 }
