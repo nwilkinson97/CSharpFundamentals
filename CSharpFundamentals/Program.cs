@@ -20,6 +20,9 @@ namespace CSharpFundamentals
             UsingInheritance();
             UsingCompositionToLinkClasses();
 
+            var customer = new Customer();      
+
+
         }
 
 
