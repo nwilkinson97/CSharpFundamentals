@@ -20,7 +20,16 @@ namespace CSharpFundamentals
             UsingInheritance();
             UsingCompositionToLinkClasses();
 
-            var customer = new Customer();      
+            var customer = new Customer();
+            // Call the Calculate Rating Function
+            // -- Here this code should not be able to be called
+            // -- this is part of the business logic.
+            // -- Pretend that you did leave this method accessible.
+            // -- then other consumer of your code will become vulnerable
+            // -- to changes in the business logic for this function.
+            // -- it is a best practice here that the CalculateRating method
+            // -- is not accessible.
+            customer.CalculateRating();
 
 
         }
