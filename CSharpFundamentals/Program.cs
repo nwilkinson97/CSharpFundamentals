@@ -16,32 +16,14 @@ namespace CSharpFundamentals
             IntTryParseMethod_OutParam();
             FieldsWithReadonlyModifier();
             FieldsEncapsulatedWithPublicGetterAndSetterMethods();
-
             UsingDictionaryClass();
-
             UsingInheritance();
 
+
+
         }
 
-        private static void UsingInheritance()
-        {
-            //  Create a New Intance of the Text Class
-            //  and use its object initializer to set the 
-            //  Height and Width from its base class 
-            //  Presentation Object.  Through Inheritance
-            //  this is possilbe.
-            var text = new Text
-            {
-                Width = 100
-                ,
-                Height = 100
-            };
-            
-            // Call the Copy function from the base class.  
-            // Inheritance makes it easy to use the behavior
-            // from one class and extend its capabilities.
-            text.Copy();
-        }
+
 
 
 
@@ -205,6 +187,25 @@ namespace CSharpFundamentals
             Console.WriteLine(cookie["name"]);
         }
 
+        private static void UsingInheritance()
+        {
+            //  Create a New Intance of the Text Class
+            //  and use its object initializer to set the 
+            //  Height and Width from its base class 
+            //  Presentation Object.  Through Inheritance
+            //  this is possilbe.
+            var text = new Text
+            {
+                Width = 100
+                ,
+                Height = 100
+            };
+
+            // Call the Copy function from the base class.  
+            // Inheritance makes it easy to use the behavior
+            // from one class and extend its capabilities.
+            text.Copy();
+        }
         #endregion
     }
 }
