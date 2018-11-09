@@ -54,7 +54,7 @@ namespace CSLib
         /// </summary>
         public void Promote()
         {
-            var rating = CalculateRating();
+            var rating = CalculateRating(excludeOrders: true);
 
             if(rating == 0)
                 System.Console.WriteLine("Promoted to Level 1");
@@ -63,7 +63,7 @@ namespace CSLib
 
         }
 
-        private int CalculateRating()
+        private int CalculateRating(bool excludeOrders)
         {
             return 0;
         }
