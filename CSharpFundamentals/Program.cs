@@ -18,15 +18,11 @@ namespace CSharpFundamentals
             FieldsEncapsulatedWithPublicGetterAndSetterMethods();
             UsingDictionaryClass();
             UsingInheritance();
-
-            var dbMigrator = new DBMigrator(new Logger());
-            var logger = new Logger();
-            var installer = new Installer(logger);
-
-            dbMigrator.Migrate();
-            installer.Install();
+            UsingCompositionToLinkClasses();
 
         }
+
+
 
 
 
@@ -211,6 +207,26 @@ namespace CSharpFundamentals
             // from one class and extend its capabilities.
             text.Copy();
         }
+
+
+        private static void UsingCompositionToLinkClasses()
+        {
+            // Create an Instance of DbMigator
+            var dbMigrator = new DBMigrator(new Logger());
+
+            // Create an installce of the Logger Class
+            var logger = new Logger();
+            // Create new instance of the Installer Class
+            // and pass the logger class created above.
+            var installer = new Installer(logger);
+
+            // Perform Migration
+            dbMigrator.Migrate();
+
+            // Perform Installation
+            installer.Install();
+        }
+
         #endregion
     }
 }
