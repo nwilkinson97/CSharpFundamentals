@@ -17,13 +17,11 @@ namespace CSharpFundamentals
             FieldsWithReadonlyModifier();
             FieldsEncapsulatedWithPublicGetterAndSetterMethods();
 
-            var cookie = new HttpCookie();
-            cookie["name"] = "Thing One";
-            Console.WriteLine(cookie["name"]);
-
-
+            UsingDictionaryClass();
 
         }
+
+
 
 
 
@@ -175,6 +173,15 @@ namespace CSharpFundamentals
             Console.WriteLine(person.Age);
         }
 
+        private static void UsingDictionaryClass()
+        {
+            // Create an instance of the HttpCookie calass in CSLib
+            var cookie = new HttpCookie();
+            // Store a value in the dictionary 
+            cookie["name"] = "Thing One";
+            //  Retrieve a value from the dictionary
+            Console.WriteLine(cookie["name"]);
+        }
 
         #endregion
     }
