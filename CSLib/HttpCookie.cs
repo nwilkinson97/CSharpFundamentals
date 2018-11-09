@@ -2,7 +2,7 @@
 
 namespace CSLib
 {
-    class HttpCookie
+    public class HttpCookie
     {
         private readonly Dictionary<string, string> _dictionary;
 

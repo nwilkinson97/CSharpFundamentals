@@ -16,6 +16,13 @@ namespace CSharpFundamentals
             IntTryParseMethod_OutParam();
             FieldsWithReadonlyModifier();
             FieldsEncapsulatedWithPublicGetterAndSetterMethods();
+
+            var cookie = new HttpCookie();
+            cookie["name"] = "Thing One";
+            Console.WriteLine(cookie["name"]);
+
+
+
         }
 
 
