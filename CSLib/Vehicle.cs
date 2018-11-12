@@ -4,10 +4,10 @@
     {
         private readonly string _registrationNumber;
 
-        public Vehicle()
-        {
-            System.Console.WriteLine("Vehicle is being initialized.");
-        }
+        //public Vehicle()
+        //{
+        //    System.Console.WriteLine("Vehicle is being initialized.");
+        //}
 
         public Vehicle(string registrationNumber)
         {
