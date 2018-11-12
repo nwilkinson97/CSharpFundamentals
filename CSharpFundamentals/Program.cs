@@ -20,7 +20,7 @@ namespace CSharpFundamentals
             UsingInheritance();
             UsingCompositionToLinkClasses();
 
-            var car = new Car();
+            var car = new Car("vin1234567890");
 
             
 
