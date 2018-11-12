@@ -19,13 +19,11 @@ namespace CSharpFundamentals
             UsingDictionaryClass();
             UsingInheritance();
             UsingCompositionToLinkClasses();
-
-            var car = new Car("vin1234567890");
-
-            
-
+            ConstructorsAndInheritanceBaseClass();
 
         }
+
+
 
 
 
@@ -232,6 +230,11 @@ namespace CSharpFundamentals
             installer.Install();
         }
 
+        private static void ConstructorsAndInheritanceBaseClass()
+        {
+            //  create new instance of the Car class and pass the VIN Number
+            var car = new Car("vin1234567890");
+        }
         #endregion
     }
 }
