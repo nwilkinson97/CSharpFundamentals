@@ -21,9 +21,23 @@ namespace CSharpFundamentals
             UsingCompositionToLinkClasses();
             ConstructorsAndInheritanceBaseClass();
 
-            Text text = new Text();
-            ShapeText shape = text;
+            DowncastingShapeTextToShape();
 
+        }
+
+        private static void DowncastingShapeTextToShape()
+        {
+            //  Create new instance of ShapeText class
+            ShapeText shapeText = new ShapeText();
+            // Create new Shape Object derrived from ShapeText
+            Shape shape = shapeText;
+
+            // Belong in Shape.cs however accessible due to downcasting
+            shapeText.Height = 200;
+            shapeText.Width = 100;
+
+            //  Display information
+            Console.WriteLine("Shape Height {0} and Width {1}", shapeText.Height, shapeText.Width);
         }
 
 
