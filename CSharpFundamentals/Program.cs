@@ -21,6 +21,9 @@ namespace CSharpFundamentals
             UsingCompositionToLinkClasses();
             ConstructorsAndInheritanceBaseClass();
 
+            Text text = new Text();
+            ShapeText shape = text;
+
         }
 
 
