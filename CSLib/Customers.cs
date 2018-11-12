@@ -54,7 +54,10 @@ namespace CSLib
         /// </summary>
         public void Promote()
         {
-            var rating = CalculateRating(excludeOrders: true);
+            //  In the future due to coupling of the classes and the creation of dependencies
+            //  there is a better way to do this via the use of interfaces. Will be covered later.
+            var calculator = new RateCalculator();
+            var rating = calculator.Calculate(this);
 
             if(rating == 0)
                 System.Console.WriteLine("Promoted to Level 1");
