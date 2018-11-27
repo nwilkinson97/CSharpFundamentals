@@ -1,6 +1,7 @@
 ﻿using CSLib;
 using System;
 using System.Diagnostics;
+using System.IO;
 
 namespace CSharpFundamentals
 {
@@ -23,33 +24,15 @@ namespace CSharpFundamentals
 
             DowncastingShapeTextToShape();
 
-        }
+        
 
-        private static void DowncastingShapeTextToShape()
-        {
-            //  Create new instance of ShapeText class
-            ShapeText shapeText = new ShapeText();
-            // Create new Shape Object derrived from ShapeText
-            Shape shape = shapeText;
 
-            // Belong in Shape.cs however accessible due to downcasting
-            shapeText.Height = 200;
-            shapeText.Width = 100;
-
-            //  Display information
-            Console.WriteLine("Shape Height {0} and Width {1}", shapeText.Height, shapeText.Width);
         }
 
 
 
 
-
-
-
-
-
-
-
+       
         #region Section 1 -- Introduction to Classes
         private static void IntroductionToClasses()
         {
@@ -251,6 +234,21 @@ namespace CSharpFundamentals
         {
             //  create new instance of the Car class and pass the VIN Number
             var car = new Car("vin1234567890");
+        }
+
+        private static void DowncastingShapeTextToShape()
+        {
+            //  Create new instance of ShapeText class
+            ShapeText shapeText = new ShapeText();
+            // Create new Shape Object derrived from ShapeText
+            Shape shape = shapeText;
+
+            // Belong in Shape.cs however accessible due to downcasting
+            shapeText.Height = 200;
+            shapeText.Width = 100;
+
+            //  Display information
+            Console.WriteLine("Shape Height {0} and Width {1}", shapeText.Height, shapeText.Width);
         }
         #endregion
     }
