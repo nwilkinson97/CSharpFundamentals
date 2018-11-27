@@ -24,34 +24,11 @@ namespace CSharpFundamentals
             UsingCompositionToLinkClasses();
             ConstructorsAndInheritanceBaseClass();
             DowncastingShapeTextToShape();
-
             BoxingAndUnboxing();
 
         }
 
-        private static void BoxingAndUnboxing()
-        {
-            // Boxing occurs for primitive data types
-            // A string passed is a reference type
-            var listOne = new ArrayList();
-            listOne.Add(1);  // boxing occurs
-            listOne.Add("Hello"); // no boxing
-            listOne.Add(DateTime.Today); // boxing occurs
 
-            // No Boxing or Unboxing used here
-            // List is of a single type and defined
-            var listTwo = new List<int>();
-            listTwo.Add(1);
-            listTwo.Add(3);
-            listTwo.Add(7);
-
-            // No Boxing or Unboxing used here
-            // List is of a single type and defined
-            var listThree = new List<string>();
-            listThree.Add("Thing 1");
-            listThree.Add("Thing 2");
-            listThree.Add("King Thing");
-        }
 
 
 
@@ -273,6 +250,30 @@ namespace CSharpFundamentals
 
             //  Display information
             Console.WriteLine("Shape Height {0} and Width {1}", shapeText.Height, shapeText.Width);
+        }
+
+        private static void BoxingAndUnboxing()
+        {
+            // Boxing occurs for primitive data types
+            // A string passed is a reference type
+            var listOne = new ArrayList();
+            listOne.Add(1);  // boxing occurs
+            listOne.Add("Hello"); // no boxing
+            listOne.Add(DateTime.Today); // boxing occurs
+
+            // No Boxing or Unboxing used here
+            // List is of a single type and defined
+            var listTwo = new List<int>();
+            listTwo.Add(1);
+            listTwo.Add(3);
+            listTwo.Add(7);
+
+            // No Boxing or Unboxing used here
+            // List is of a single type and defined
+            var listThree = new List<string>();
+            listThree.Add("Thing 1");
+            listThree.Add("Thing 2");
+            listThree.Add("King Thing");
         }
         #endregion
     }
