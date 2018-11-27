@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="Canvas.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Customers.cs" />
     <Compile Include="DBMigrator.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="RateCalculator.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="ShapeText.cs" />
+    <Compile Include="ShapeType.cs" />
     <Compile Include="Text.cs" />
     <Compile Include="Vehicle.cs" />
   </ItemGroup>
