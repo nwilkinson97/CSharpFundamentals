@@ -34,7 +34,7 @@ namespace CSharpFundamentals
 
 
 
-        #region Section 1 -- Introduction to Classes
+        #region Section 1 -- Introduction Object Oriented Programming (OOP)
         private static void IntroductionToClasses()
         {
             //  New instance of the person class for Thing 1
