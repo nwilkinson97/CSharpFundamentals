@@ -26,6 +26,8 @@ namespace CSharpFundamentals
             DowncastingShapeTextToShape();
             BoxingAndUnboxing();
 
+            var Shape = new Shape();
+
             var shapes = new List<Shape>();
             shapes.Add(new Circle());
             shapes.Add(new Rectangle());
