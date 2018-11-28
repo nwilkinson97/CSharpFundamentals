@@ -1,9 +1,5 @@
 ﻿namespace CSLib
 {
-
-
-
-
     public class Shape
     {
         public int Width { get; set; }
