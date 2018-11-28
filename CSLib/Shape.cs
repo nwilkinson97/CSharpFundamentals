@@ -1,5 +1,10 @@
 ﻿namespace CSLib
 {
+    public class Octagon : Shape
+    {
+
+    }
+
     public abstract class Shape
     {
         public int Width { get; set; }
