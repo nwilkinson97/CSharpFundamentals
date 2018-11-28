@@ -30,6 +30,7 @@ namespace CSharpFundamentals
             shapes.Add(new Circle());
             shapes.Add(new Rectangle());
             shapes.Add(new Triangle());
+            shapes.Add(new Octagon());
 
             var canvas = new Canvas();
             canvas.DrawShapes(shapes);
