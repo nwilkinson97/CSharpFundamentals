@@ -25,19 +25,11 @@ namespace CSharpFundamentals
             ConstructorsAndInheritanceBaseClass();
             DowncastingShapeTextToShape();
             BoxingAndUnboxing();
-
-            var Shape = new Shape();
-
-            var shapes = new List<Shape>();
-            shapes.Add(new Circle());
-            shapes.Add(new Rectangle());
-            shapes.Add(new Triangle());
-            shapes.Add(new Octagon());
-
-            var canvas = new Canvas();
-            canvas.DrawShapes(shapes);
+            AbstractClassesAndMethods();
 
         }
+
+
 
 
 
@@ -286,6 +278,21 @@ namespace CSharpFundamentals
             listThree.Add("Thing 2");
             listThree.Add("King Thing");
         }
+
+        private static void AbstractClassesAndMethods()
+        {
+            // var Shape = new Shape();
+
+            var shapes = new List<Shape>();
+            shapes.Add(new Circle());
+            shapes.Add(new Rectangle());
+            shapes.Add(new Triangle());
+            shapes.Add(new Octagon());
+
+            var canvas = new Canvas();
+            canvas.DrawShapes(shapes);
+        }
+
         #endregion
     }
 }
